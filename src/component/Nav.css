@@ -1,0 +1,135 @@
+.header {
+    background-color: #282A35;
+    color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 20px;
+
+}
+
+.header div {
+    margin: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header2 p {
+    color: #282A35;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px;
+}
+.header2 p span {
+    color: #E50909;
+}
+.header2 {
+      background-color: #F1F1F1;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+nav {
+    background-color: #F1F1F1;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    box-shadow: 0 10px 10px #0000003c;
+}
+.user{
+
+    color: #282A35;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.user .user-icon{
+    font-size: 30px;
+    margin: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 20px ;
+    padding: 10px;
+}
+nav ul li a {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #282A35;
+    font-weight: bold;
+    position: relative;
+    
+}
+
+nav ul li a.active  {
+    color: #E50909;
+}
+
+nav ul li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #E50909;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    transition: all 0.5s ease;
+    border-radius: 10px;
+
+}
+
+nav ul li a.active::after {
+width: 70%;
+}
+.input_holder{
+    padding: 10px;
+    background-color: aliceblue;
+    width: 600px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input_holder input{
+        background-color: aliceblue;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 5PX;
+    border: none;
+}
+.input_holder input:focus{
+    outline: none;
+}
+
+
+#search{
+    font-size: 20PX;
+}
+
+.icon{
+    font-size: 25px;
+    margin: 10px;
+}
+
+.header div span{
+    margin-left: 10px;
+}
+.acc_elems{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

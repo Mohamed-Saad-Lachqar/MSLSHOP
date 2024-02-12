@@ -1,0 +1,13 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.4s ease;
+    scroll-behavior: smooth;
+}
+.container {
+    padding: 10px 70px;
+
+}
