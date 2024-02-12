@@ -14,9 +14,9 @@ function App() {
         <Nav />
 
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/about" element={<About />} />
-          <Route exact path="/contact" element={<Contact />} />
+          <Route exact path="/MSLSHOP/" element={<Home />} />
+          <Route exact path="/MSLSHOP/about" element={<About />} />
+          <Route exact path="/MSLSHOP/contact" element={<Contact />} />
         </Routes>
         <Last />
       </BrowserRouter>

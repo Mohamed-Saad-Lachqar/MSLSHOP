@@ -11,48 +11,51 @@ import { IoPersonCircleOutline } from "react-icons/io5";
 export default function Nav() {
   return (
     <>
-    <div className='header container'>
-      <div>
-        <FaPhoneAlt />
-        <span>
-          +212 625-888666
-        </span>
-       </div>
-     <div>
-       <IoMail  />
-       <span>
-         example@gmail.com
-       </span>
+      <div className="header container">
+        <div>
+          <FaPhoneAlt />
+          <span>+212 625-888666</span>
+        </div>
+        <div>
+          <IoMail />
+          <span>example@gmail.com</span>
+        </div>
       </div>
+      <Headroom>
+        <div className="header2 container">
+          <p>
+            msl<span>shop</span>
+          </p>
+          <div className="input_holder">
+            <CiSearch id="search" />
+            <input type="search" placeholder="Tap to search ..." />
+          </div>
+          <div className="acc_elems">
+            <CiLogin className="icon" />
+            <FaBagShopping className="icon" />
+          </div>
+        </div>
+        <nav className="container">
+          <div className="user">
+            <IoPersonCircleOutline className="user-icon" />
+            user
+          </div>
 
-    </div><Headroom>
-    <div className='header2 container'>
-<p>msl<span>shop</span></p>
-<div className="input_holder">
-  <CiSearch id='search'/>
-  <input type="search" placeholder='Tap to search ...' />
-</div>
-<div className='acc_elems'><CiLogin className='icon'/>
-<FaBagShopping  className='icon' /></div>
-
-</div >
-<nav className='container'>
-  <div className='user'>
-<IoPersonCircleOutline className='user-icon' />
-user
-</div>
-
-  <ul>
-    <li>
-        <NavLink to='/'>home</NavLink>
-  </li>
-  <li>  <NavLink  to='/about'>about</NavLink>
-</li>
-<li>  <NavLink  to='/contact'>contact</NavLink>
-</li>
-  </ul>
-</nav>
-</Headroom>
+          <ul>
+            <li>
+              <NavLink to="/MSLSHOP/">home</NavLink>
+            </li>
+            <li>
+              {" "}
+              <NavLink to="/MSLSHOP/about">about</NavLink>
+            </li>
+            <li>
+              {" "}
+              <NavLink to="/MSLSHOP/contact">contact</NavLink>
+            </li>
+          </ul>
+        </nav>
+      </Headroom>
     </>
-  )
+  );
 }
